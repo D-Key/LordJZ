@@ -1,0 +1,25 @@
+﻿<lordjz:BaseWindow
+    x:Class="LordJZ.Demo.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:lordjz="clr-namespace:LordJZ.Presentation.Controls;assembly=LordJZ.Presentation"
+    Title="MainWindow"
+    Height="450"
+    Width="350"
+    Style="{StaticResource ResourceKey={x:Type lordjz:BaseWindow}}"
+    >
+    <!-- BaseWindow.Style assignment is required here to trigger BaseWindow.ApplyTemplate() -->
+    <Grid>
+        <TextBox
+            Text="Hello, content."
+            FontSize="13"
+            BorderThickness="0"
+            AcceptsReturn="True" 
+            Padding="2"
+            Background="Transparent"
+            ScrollViewer.CanContentScroll="True" 
+            ScrollViewer.VerticalScrollBarVisibility="Auto"
+            ScrollViewer.HorizontalScrollBarVisibility="Auto"
+            />
+    </Grid>
+</lordjz:BaseWindow>
